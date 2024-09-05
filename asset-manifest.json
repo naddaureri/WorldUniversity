@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/WorldUniversity/static/css/main.92b7e1ee.css",
+    "main.js": "/WorldUniversity/static/js/main.e2bb3337.js",
+    "static/js/453.bea66239.chunk.js": "/WorldUniversity/static/js/453.bea66239.chunk.js",
+    "static/media/fraction.cjs": "/WorldUniversity/static/media/fraction.7992481f3d8339b77604.cjs",
+    "index.html": "/WorldUniversity/index.html",
+    "static/media/index.cjs": "/WorldUniversity/static/media/index.cd351d7c31d0d3fccf96.cjs",
+    "main.92b7e1ee.css.map": "/WorldUniversity/static/css/main.92b7e1ee.css.map",
+    "main.e2bb3337.js.map": "/WorldUniversity/static/js/main.e2bb3337.js.map",
+    "453.bea66239.chunk.js.map": "/WorldUniversity/static/js/453.bea66239.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92b7e1ee.css",
+    "static/js/main.e2bb3337.js"
+  ]
+}
