@@ -10,14 +10,18 @@ import IndexHome from './home/indexHome';
 import DetailSearch from './search/detailSearch';
 import IndexFilter from './filter/indexFilter';
 import About from './about/aboutPage';
+import LoginProvider from './context/LoginContext';
+import Login from './login';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+   
   <BrowserRouter>
-  <Navigation/>
-  <Routes>
+      <LoginProvider>
+      <Navigation/>
+          <Routes>
       
           
           <Route path="home" element={< IndexHome/>} />
@@ -25,12 +29,15 @@ root.render(
           <Route path="countrySearch/:name" element={<DetailSearch />} />
           <Route path="countryFilter" element={<IndexFilter />} />
           <Route path="about" element={<About />} />
-         
+          <Route path="login" element={<Login />} />
           
           
          
       
       </Routes>
+      
+      </LoginProvider>
+ 
   </BrowserRouter>
   </React.StrictMode>
 );

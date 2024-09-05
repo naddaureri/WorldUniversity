@@ -38,14 +38,14 @@ export default function DetailSearch(){
 
     
     return(
-              <>
-              <div className="bg-blue-300 rounded flex flex-wrap">
+      <>
+              <div className="  flex flex-col bg-gradient-to-r from-blue-600 to-blue-300 place-items-center">
          <div>
-            <div className="font-bold text-2xl">{data.name.common}</div>
+            <div className="font-bold text-2xl text-green-100">{data.name.common}</div>
               <img src={data.flags.png} alt="Fetched PNG" />
          </div>
 
-         <div className="data">
+         <div className="text-white font-mono">
 
          <div className="">Capital : {data.capital}</div>
           <div className="">Population : {data.population}</div>

@@ -54,10 +54,10 @@ export default function IndexSearch(){
   return(
     <>
    
-  <form action="" className="bg-green-300   flex flex-wrap gap-1 place-content-center">
-    <input type="text" placeholder="Search here" className="  bg-gray-500 rounded w-5/6" id="search" value={searchTerm}
+  <form action="" className="   flex flex-wrap gap-1 place-content-center">
+    <input type="text" placeholder="Search here" className="  bg-gray-500 rounded w-5/6 border-4 border-transparent active:border-white " id="search" value={searchTerm}
         onChange={handleInputChange}/>
-    <button className="bg-pink-500 rounded p-1" onClick={handleClick}>
+    <button className="bg-green-300 rounded p-1" onClick={handleClick}>
               <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -80,7 +80,7 @@ export default function IndexSearch(){
           <div key={index} className="flex flex-wrap gap-4 my-4">
               <li  className="bg-blue-300 p-5 w-4/5 rounded place-self-center ">{item.name} </li>
               <Link  to={`/countrySearch/${item.name}`}>
-              <button className="bg-pink-400 rounded border-spacing-1"> Detail</button>
+              <button className="bg-pink-400 rounded-lg border-spacing-1 h-full p-5"> Detail</button>
                </Link>
             
           </div>

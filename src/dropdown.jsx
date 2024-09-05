@@ -89,7 +89,7 @@ export default function Dropdown() {
             <div className="relative flex flex-col items-center w-full ">
             <div className="relative flex flex-col items-center w-[750px] bg-gray-100">
                 <button
-                    className="bg-blue-500 p-4 w-full flex items-center font-bold rounded-lg tracking-wider border-5 border-transparent active:border-white active:text-white"
+                    className="bg-blue-500 p-4 w-full flex items-center font-bold rounded-lg tracking-wider border-5 border-transparent active:border-white active:text-white hover:text-white"
                     onClick={() => setIsOpen(prev => !prev)}
                 >
                     Filter Country 
@@ -126,14 +126,14 @@ export default function Dropdown() {
             </div>)}
         
         {isClick && (
-                 <div className="flex flex-wrap  justify-center">
+                 <div className="flex flex-wrap  justify-center w-full bg-blue-100">
                  {data && (
                    <div>{
                        data.map((item,i)=>
                        (
                            <div className="p-4 w-full  mb-4">
-                                <div key={i} className="p-2 my-3 w-full rounded-lg border-4 border-black place-content-center bg-pink-400 hover:bg-blue-300 flex flex-col items-center text-center" >
-                               <h3 className="font-bold place-items-center"> Name : {item.name.common}</h3>
+                                <div key={i} className="p-2 my-3 w-full rounded-lg border-4 border-black place-content-center bg-blue-400  hover:bg-blue-300 flex flex-col items-center text-center" >
+                               <h3 className="font-bold place-items-center text-white"> Name : {item.name.common}</h3>
                                <img src={item.flags.png} alt="Fetched PNG" />
                                </div>
                            </div>
